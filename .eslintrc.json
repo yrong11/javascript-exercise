@@ -10,7 +10,8 @@
     "jest/valid-describe": "error",
     "jest/no-focused-tests": "warn",
     "class-methods-use-this": "warn",
-    "no-console": "off"
+    "no-console": "off",
+    "prefer-promise-reject-errors": "off"
   },
   "env": {
     "jest": true,

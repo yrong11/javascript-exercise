@@ -17,14 +17,3 @@ function fetchData(url, successCallback, errorCallback) {
   xhr.send();
   // end -->
 }
-
-const URL = 'http://localhost:3000/api';
-fetchData(
-  URL,
-  result => {
-    document.writeln(JSON.parse(result).name);
-  },
-  error => {
-    console.error(error);
-  }
-);

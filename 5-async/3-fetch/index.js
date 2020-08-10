@@ -4,7 +4,7 @@ function fetchData(url) {
   const options = {
     method: 'GET',
     header: {
-      'content-type': 'application/json'
+      'Content-Type': 'application/json'
     }
   };
   return fetch(url, options);
@@ -14,7 +14,8 @@ function fetchData(url) {
 const URL = 'http://localhost:3000/api';
 fetchData(URL)
   .then(result => {
-    document.writeln(result.name);
+    console.log(result);
+    document.writeln(JSON.parse(result.responseText).name);
   })
   .catch(error => {
     console.error(error);
